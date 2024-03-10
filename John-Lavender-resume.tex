@@ -161,8 +161,8 @@
   		\resumeItemListStart
   		\resumeItem{Re-engineered permissions-based access logic within the \textbf{Node.js} server file to conform to changes in the transition from \textbf{Keycloak} version 11 to 23}
   		\resumeItem{Enhanced security by (1) requiring client secret for authentication, (2) forcing API requests through single client, (3) performing extensive permissions checks in-code, and (4) masking sensitive data from front-end}
-  		\resumeItem{Rewrote \textbf{React} components from \textbf{JavaScript} to \textbf{TypeScript} to squash bugs and improve code readability.}
-		\resumeItem{Created \textbf{Docker} scripts to improve the process of local testing and development.}
+  		\resumeItem{Rewrote \textbf{React.js} components from \textbf{JavaScript} to \textbf{TypeScript} to squash bugs and improve code quality.}
+		\resumeItem{Created \textbf{Docker} scripts to significantly improve the process of local testing and development.}
   		\resumeItemListEnd
   	\resumeItemListEnd
 
@@ -170,9 +170,10 @@
       {Backend Engineer Intern}{Alpharetta, GA}
       {Ware2Go}{May 2023 \textbf{--} Aug 2023, Full-time Remote}
         \resumeItemListStart            
-            \resumeItem{Aided in the long-term transition to the new Warehouse Management System by rewriting \textbf{50+} functions to conform to new logic.}
-            \resumeItem{Transformed codebase of microservice from \textbf{TypeScript} to \textbf{Kotlin} to re-align logic with updated data models, improve code readability, and elevate test coverage by \textbf{45\%}.}
-        	\resumeItem{Enhanced \textbf{system security} by developing an in-code interceptor capable of serving as an HTTP interceptor, designed to filter out logs containing sensitive data.}
+            \resumeItem{Aided in the long-term transition to the new Warehouse Management System (WMS) by rigorously rewriting \textbf{75+} functions to conform to the new logic.}
+            \resumeItem{Transformed codebase of microservice from \textbf{TypeScript} to \textbf{Kotlin} to re-align logic with updated data models, improve code readability, and elevate unit tests coverage by \textbf{45\%}.}
+        	\resumeItem{Enhanced \textbf{system security} by developing an in-code interceptor capable of serving as an HTTP interceptor, designed to filter out logs containing sensitive data from \textbf{DataDog}.} 
+        	\resumeItem{Identified and resolved an issue pertaining to mismatch of data columns within \textbf{SQL} tables whose data was connected through in-code functions; this issue arose during the WMS transition.}       	
         \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -187,44 +188,39 @@
 {CS Teaching Assistant}{Athens, GA}
 {University of Georgia}{Aug 2023 \textbf{--} Dec 2023, Part-time In-Person}
 \resumeItemListStart
-\resumeItem{Delivered lectures to \textbf{30+} students to enrich their understanding and foster a dynamic learning environment, focusing on the fundamentals of \textbf{programming and design principles}.}
-\resumeItem{Evaluated assignments meticulously, offering \textbf{targeted and constructive feedback} to enhance overall student comprehension and performance.}
+\resumeItem{Delivered lectures to \textbf{30+} students to enrich their understanding of \textbf{programming and design principles}.}
+\resumeItem{Reviewed assignments and offered \textbf{constructive feedback} to enhance student comprehension and performance.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Peer Learning Assistant}{Athens, GA}
 {University of Georgia}{Jan 2023 \textbf{--} May 2023, Part-time In-Person}
 \resumeItemListStart
-\resumeItem{Guided students to grasp CS concepts, fostering an understanding of the "why" behind the code they wrote.}
-\resumeItem{Facilitated in-class Q\&A sessions, helping students to bridge the gap between theory and practice.} 
+\resumeItem{Guided students to grasp CS concepts, \textbf{fostering an understanding of the "why"} behind the code they wrote.}
+\resumeItem{Facilitated in-class Q\&A sessions, helping students to bridge the gap between \textbf{theory} and \textbf{practice}.} 
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%----------- PROJECTS -----------
+%----------- OPEN-SOURCE PROJECTS -----------
 
 \section{Open-Source Projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
     
      \resumeProjectHeading
-    {\textbf{Object-Type Props in Tiled [Contribution]} $|$ \emph{\href{https://github.com/libgdx/libgdx/pull/7229}{\color{blue}github.com/libgdx/libgdx/pull/7229}}}{}
+    {\textbf{Object-Type Props in Tiled [Contribution]} $|$ Java, Android \\ \emph{\href{https://github.com/libgdx/libgdx/pull/7229}{\color{blue}github.com/libgdx/libgdx/pull/7229}}}{}
     \resumeItemListStart
-    \resumeItem{Made a contribution to the open-source LibGDX project to add logic for supporting the "object" property type in the Tiled level-map editor.}
+    \resumeItem{Contributed to \textbf{open-source} \textit{LibGDX} project to add and test logic for supporting "object" prop type in \textit{Tiled}.}
     \resumeItemListEnd
       
       \resumeProjectHeading
-        {\textbf{2D Game Engine} $|$ \emph{\href{https://github.com/JohnLavender474/2D-Game-Engine}{\color{blue}github.com/JohnLavender474/2D-Game-Engine}}}{}
+        {\textbf{2D Game Engine \& Megaman Maverick} $|$ Kotlin, Maven, Kotest \\ \emph{\href{https://github.com/JohnLavender474/2D-Game-Engine}{\color{blue}github.com/JohnLavender474/2D-Game-Engine} } $|$
+        \emph{\href{https://github.com/JohnLavender474/Megaman-Maverick}{\color{blue}github.com/JohnLavender474/Megaman-Maverick} }}{}
           \resumeItemListStart
-            \resumeItem{A \textbf{Kotlin} project built on the open-source LibGDX game library to provide the architecture and tools necessary to develop a 2D game for desktop, Android, iOS, and web platforms.}
-            \resumeItem{Built using the \textbf{Entity-Component-System} pattern to allow for extensibility and customizability.}
-          \resumeItemListEnd              
-      
-      \resumeProjectHeading
-        {\textbf{Megaman Maverick} $|$ \emph{\href{https://github.com/JohnLavender474/Megaman-Maverick}{\color{blue}github.com/JohnLavender474/Megaman-Maverick}}}{}
-          \resumeItemListStart
-            \resumeItem{A game in-progress which is built using the \textit{2D Game Engine} to showcase the engine's capabilities.}
-          \resumeItemListEnd           
+            \resumeItem{Built a game engine in \textbf{Kotlin} on top of the \textit{LibGDX} game library to provide the \textbf{architecture} and \textbf{tools} necessary to develop 2D games for desktop and mobile platforms.}
+            \resumeItem{Created an in-progress game with the \textit{2D Game Engine} project; this showcases not only artistic endeavor but also application of OOP concepts like \textbf{separation of concerns}, \textbf{single-responsibility classes}, and \textbf{inheritance}.}
+          \resumeItemListEnd                                                
       
     \resumeSubHeadingListEnd
 
@@ -235,11 +231,11 @@
 \resumeSubHeadingListStart
 \small{\item{
 		
-		\textbf{Languages:}{ Kotlin, Java, TypeScript, JavaScript, SQL, C, C++, C\#} \\ \vspace{3pt}
+		\textbf{Languages:}{ Kotlin, Java, TypeScript, JavaScript, SQL, HTML, CSS} \\ \vspace{3pt}
 		
-		\textbf{Technologies:}{ Node.js, React.js, Spring Boot, Git, Docker, Keycloak, Kafka} \\ \vspace{3pt}
+		\textbf{Technologies:}{ Node.js, React.js, Spring Boot, Git, Docker, Keycloak, Kafka, DataDog, Maven, JUnit, Kotest} \\ \vspace{3pt}
 		
-		\textbf{Methodologies:}{ Agile, Scrum, OOP, Functional Programming, DevOps, CI/CD} \\ \vspace{3pt}
+		\textbf{Methodologies:}{ Agile, Scrum, OOP, Functional Programming, DevOps, Unit Testing, Algorithm Analysis} \\ \vspace{3pt}
 		
 }}
 \resumeSubHeadingListEnd
@@ -251,9 +247,7 @@
 \resumeSubHeadingListStart
 
 \resumeEducationHeading
-{University of Georgia
-	% \normalfont{(Admission rate: 0.09\%)}
-}{Athens, GA}
+{University of Georgia}{Athens, GA}
 {B.Sc. in Computer Science;   \textbf{GPA: 3.5/4.00}}{Jan 2020 \textbf{--} Dec 2023}{}
 
 \resumeSubHeadingListEnd
