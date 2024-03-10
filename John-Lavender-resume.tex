@@ -1,0 +1,263 @@
+%-------------------------
+% Resume in Latex
+% Author : John Lavender
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape John Lavender} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:7066212819}{+1 706 621 2819}
+    $|$
+    \faMapMarker \hspace{.5pt} Athens, GA
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:johnmichaellavender123@gmail.com}{johnmichaellavender123@gmail.com}
+    \\
+    \faGlobe \hspace{.5pt} \href{https://john-lavender.com}{john-lavender.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/john-lavender}{linkedin.com/in/john-lavender}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/JohnLavender474}{github.com/JohnLavender474}
+\end{center}
+
+
+%----------- INDUSTRY EXPERIENCE -----------
+
+\section{Industry Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+  
+  	\resumeSubheading
+  	{Software Developer Intern}{Atlanta, GA}
+  	{McKenney's}{Dec 2023 \textbf{--} Present, Full-time Hybrid}
+  	\resumeItemListStart
+  	\resumeItem{Overhauled BuildingConnect app to improve the experience and security for \textbf{1000+} contractors:}
+  		\resumeItemListStart
+  		\resumeItem{Re-engineered permissions-based access logic within the \textbf{Node.js} server file to conform to changes in the transition from \textbf{Keycloak} version 11 to 23}
+  		\resumeItem{Enhanced security by (1) requiring client secret for authentication, (2) forcing API requests through single client, (3) performing extensive permissions checks in-code, and (4) masking sensitive data from front-end}
+  		\resumeItem{Rewrote \textbf{React} components from \textbf{JavaScript} to \textbf{TypeScript} to squash bugs and improve code readability.}
+		\resumeItem{Created \textbf{Docker} scripts to improve the process of local testing and development.}
+  		\resumeItemListEnd
+  	\resumeItemListEnd
+
+    \resumeSubheading
+      {Backend Engineer Intern}{Alpharetta, GA}
+      {Ware2Go}{May 2023 \textbf{--} Aug 2023, Full-time Remote}
+        \resumeItemListStart            
+            \resumeItem{Aided in the long-term transition to the new Warehouse Management System by rewriting \textbf{50+} functions to conform to new logic.}
+            \resumeItem{Transformed codebase of microservice from \textbf{TypeScript} to \textbf{Kotlin} to re-align logic with updated data models, improve code readability, and elevate test coverage by \textbf{45\%}.}
+        	\resumeItem{Enhanced \textbf{system security} by developing an in-code interceptor capable of serving as an HTTP interceptor, designed to filter out logs containing sensitive data.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+  
+%----------- TEACHING EXPERIENCE ---------
+
+\section{Teaching Experience}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{CS Teaching Assistant}{Athens, GA}
+{University of Georgia}{Aug 2023 \textbf{--} Dec 2023, Part-time In-Person}
+\resumeItemListStart
+\resumeItem{Delivered lectures to \textbf{30+} students to enrich their understanding and foster a dynamic learning environment, focusing on the fundamentals of \textbf{programming and design principles}.}
+\resumeItem{Evaluated assignments meticulously, offering \textbf{targeted and constructive feedback} to enhance overall student comprehension and performance.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Peer Learning Assistant}{Athens, GA}
+{University of Georgia}{Jan 2023 \textbf{--} May 2023, Part-time In-Person}
+\resumeItemListStart
+\resumeItem{Guided students to grasp CS concepts, fostering an understanding of the "why" behind the code they wrote.}
+\resumeItem{Facilitated in-class Q\&A sessions, helping students to bridge the gap between theory and practice.} 
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+
+\section{Open-Source Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+    
+     \resumeProjectHeading
+    {\textbf{Object-Type Props in Tiled [Contribution]} $|$ \emph{\href{https://github.com/libgdx/libgdx/pull/7229}{\color{blue}github.com/libgdx/libgdx/pull/7229}}}{}
+    \resumeItemListStart
+    \resumeItem{Made a contribution to the open-source LibGDX project to add logic for supporting the "object" property type in the Tiled level-map editor.}
+    \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{2D Game Engine} $|$ \emph{\href{https://github.com/JohnLavender474/2D-Game-Engine}{\color{blue}github.com/JohnLavender474/2D-Game-Engine}}}{}
+          \resumeItemListStart
+            \resumeItem{A \textbf{Kotlin} project built on the open-source LibGDX game library to provide the architecture and tools necessary to develop a 2D game for desktop, Android, iOS, and web platforms.}
+            \resumeItem{Built using the \textbf{Entity-Component-System} pattern to allow for extensibility and customizability.}
+          \resumeItemListEnd              
+      
+      \resumeProjectHeading
+        {\textbf{Megaman Maverick} $|$ \emph{\href{https://github.com/JohnLavender474/Megaman-Maverick}{\color{blue}github.com/JohnLavender474/Megaman-Maverick}}}{}
+          \resumeItemListStart
+            \resumeItem{A game in-progress which is built using the \textit{2D Game Engine} to showcase the engine's capabilities.}
+          \resumeItemListEnd           
+      
+    \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\small{\item{
+		
+		\textbf{Languages:}{ Kotlin, Java, TypeScript, JavaScript, SQL, C, C++, C\#} \\ \vspace{3pt}
+		
+		\textbf{Technologies:}{ Node.js, React.js, Spring Boot, Git, Docker, Keycloak, Kafka} \\ \vspace{3pt}
+		
+		\textbf{Methodologies:}{ Agile, Scrum, OOP, Functional Programming, DevOps, CI/CD} \\ \vspace{3pt}
+		
+}}
+\resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeEducationHeading
+{University of Georgia
+	% \normalfont{(Admission rate: 0.09\%)}
+}{Athens, GA}
+{B.Sc. in Computer Science;   \textbf{GPA: 3.5/4.00}}{Jan 2020 \textbf{--} Dec 2023}{}
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\end{document}
